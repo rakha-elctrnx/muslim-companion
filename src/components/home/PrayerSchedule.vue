@@ -166,7 +166,7 @@ export default {
         .get(endpoint)
         .then(response => {
           const id = response.data.data[0].id;
-          getJadwal(firstData[0].id);
+          getJadwal(id);
         })
         .catch(error => {
           console.error(error);
