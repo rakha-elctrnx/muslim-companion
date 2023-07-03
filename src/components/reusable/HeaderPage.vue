@@ -24,7 +24,7 @@
         viewBox="0 0 15 15"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
-        class="text-teal-700 w-10 h-10 p-3 hover:bg-teal-200/50 dark:hover:bg-slate-500/30 rounded-full"
+        class="text-transparent w-10 h-10 p-3 hover:bg-teal-200/50 dark:hover:bg-slate-500/30 rounded-full"
       >
         <path
           d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"

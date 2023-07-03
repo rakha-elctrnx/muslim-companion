@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-r from-emerald-700 to-teal-500 rounded-md p-3 sm:p-1"
+    class="bg-teal-500/90 rounded-md p-3 sm:p-1"
   >
     <slot></slot>
   </div>

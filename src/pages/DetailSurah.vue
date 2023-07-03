@@ -92,11 +92,6 @@ import router from '../router/index';
 import { useDark } from "@vueuse/core";
 
 export default {
-  data() {
-    return {
-      isPlaying: false
-    }
-  },
   methods: {
     togglePlayback() {
       const audioPlayer = this.$refs.audioPlayer;
@@ -116,6 +111,8 @@ export default {
     const detailsurah = ref([]);
     const currentTab = ref("ListCardAyat");
     const isDark = useDark();
+    const isPlaying = ref(false);
+
     const colorDefaultButton = reactive({
       class: "bg-gradient-to-r from-emerald-700 to-teal-500 text-white",
       ListAyat: true,
@@ -156,6 +153,7 @@ export default {
           detailsurah.value = data;
   
           audio.value = detailsurah.value.audioFull["05"];
+          isPlaying.value = false;
           router.push(`/surat/${nextSurahId}`);
         }
       
@@ -174,6 +172,7 @@ export default {
           detailsurah.value = data;
   
           audio.value = detailsurah.value.audioFull["05"];
+          isPlaying.value = false;
           router.push(`/surat/${nextSurahId}`);
         }
 
@@ -206,6 +205,7 @@ export default {
       showTafsir,
       colorDefaultButton,
       handleEvent,
+      isPlaying
     };
   },
 };
