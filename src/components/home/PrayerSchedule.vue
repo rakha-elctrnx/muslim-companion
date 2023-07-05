@@ -166,27 +166,27 @@ export default {
         .get(endpoint)
         .then(response => {
           const id = response.data.data[0].id;
-          getJadwal(id);
+          getDynamicLocation(id);
         })
         .catch(error => {
           console.error(error);
         });
     };
 
-    const getJadwal = (id) => {
-      const endpoint = `https://api.myquran.com/v1/sholat/jadwal/${id}/` + getDate();
+    // const getJadwal = (id) => {
+    //   const endpoint = `https://api.myquran.com/v1/sholat/jadwal/${id}/` + getDate();
 
-      axios
-        .get(endpoint)
-        .then(response => {
-          let { data } = response.data;
-          jadwalSholat.lokasi = data.lokasi;
-          jadwalSholat.jadwal = data.jadwal;
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    };
+    //   axios
+    //     .get(endpoint)
+    //     .then(response => {
+    //       let { data } = response.data;
+    //       jadwalSholat.lokasi = data.lokasi;
+    //       jadwalSholat.jadwal = data.jadwal;
+    //     })
+    //     .catch(error => {
+    //       console.error(error);
+    //     });
+    // };
 
     // method untuk mendapatkan jadwal berdasarkan lokasi dan tgl saat ini
     const getDefaultLocation = async (city) => {

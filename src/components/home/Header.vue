@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between px-7 py-5">
     <div>
-      <div class="flex mb-1 items-center font-semibold text-teal-900 dark:text-white">Muslim Companion<img class="w-4 h-4 ml-2"
+      <div class="flex mb-1 items-center font-semibold text-teal-900 dark:text-white">Sahabat Muslim<img class="w-4 h-4 ml-2"
           src="/image/muslim.webp" alt="" /></div>
       <div class="text-sm text-teal-900 dark:text-white">{{ currentDate }}</div>
     </div>
